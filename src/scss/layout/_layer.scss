@@ -37,92 +37,43 @@
   }
 }
 
-// .horizontal1{
-//   bottom: calc(68% - 4px);
-//   left: 0;
-//   width: 22%;
-//   height: 4px;
-//   transform: scaleX(0);
-// }
-
-// .vertical{
-//   bottom: 0;
-//   left: 22%;
-//   width: 4px;
-//   height: 68%;
-//   transform: scaleY(0);
-// }
-
-// .vertical2{
-//     top: 100%;
-//     left: 22%;
-//     width: 4px;
-//     height: 48.5%;
-//     transform: scaleY(0);
-// }
-
-// .vertical3{
-//   top: 200%;
-//   left: 22%;
-//   width: 4px;
-//   height: 48.5%;
-//   transform: scaleY(0);
-// }
-
-// #wrapper-end{
-//   .horizontal2{
-//     top: 28%;
-//     left: 0;
-//     width: 100%;
-//     height: 4px;
-//     transform: scaleX(0);
-//   }
-
-// }
-
-
-// // .contact{
-// // top: 130.5%;
-// // left: 16%;
-// // right: 33%;
-// // width: 6%;
-// // height: 4px;
-// // transform: scaleX(0);
-// // }
-
-
-// @media screen and (max-width: 768px) {
-//   .horizontal1{
-//     bottom: calc(68% - 4px);
-//     left: 0;
-//     width: 12%;
-//     height: 4px;
-//     transform: scaleX(0);
-//   }
-
-//   .vertical{
-//     bottom: 0;
-//     left: 12%;
-//     width: 4px;
-//     height: 68%;
-//     transform: scaleY(0);
-//   }
-
-//   .vertical2{
-//     top: 100%;
-//     left: 12%;
-//     width: 4px;
-//     height: 48.5%;
-//     transform: scaleY(0);
-//   }
-
-//   .horizontal2{
-//     top: 148.5%;
-//     left: 12%;
-//     right: 33%;
-//     width: auto;
-//     height: 4px;
-//     transform: scaleX(0);
-//   }
-  
-// }
+@media(max-width: $desktop){
+  .trait {
+    &.horizontal-top{
+      top: 195px;
+    }
+    &.vertical{
+      top: 195px;
+    }
+  }
+}
+@media(max-width: $desktop-small){
+  .trait {
+    &.horizontal-top{
+      top: 170px;
+    }
+    &.vertical{
+      top: 170px;
+    }
+  }
+}
+@media(max-width: $tablet){
+  .trait {
+    &.horizontal-top{
+      right: calc(100% - 100px);
+      top: 148px;
+    }
+    &.vertical{
+      left: 100px;
+      top: 148px;
+    }
+    &.horizontal-bottom{
+      left: 100px;
+    }
+  }
+}
+@media(max-width: $phone){
+  .wrapper-traits{
+    display: none;
+  }
+}

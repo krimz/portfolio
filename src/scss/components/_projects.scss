@@ -80,3 +80,30 @@
         font-size: 2.4rem;
     }
 }
+
+@media(max-width: $desktop-small){
+    .projects{
+        > li{
+            height: 200px;
+        }
+        .project-title{
+            font-size: 3rem;
+        }
+        .project-type{
+            font-size: 2rem;
+        }
+    }
+}
+@media(max-width: $tablet){
+    .projects{
+        > li{
+            height: 150px;
+        }
+        .project-title{
+            font-size: 2.6rem;
+        }
+        .project-type{
+            font-size: 1.6rem;
+        }
+    }
+}

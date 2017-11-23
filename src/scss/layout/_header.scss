@@ -37,3 +37,29 @@
 		}
 	}
 }
+
+@media(max-width: $desktop){
+	.menu-header{
+		>li {
+			margin: 0 100px 0 0;
+		}
+	}
+}
+@media(max-width: $desktop-small){
+	.menu-header{
+		>li {
+			margin: 0 50px 0 0;
+		}
+	}
+}
+@media(max-width: $tablet){
+	#header{
+		.container{
+			display: block;
+		}
+	}
+	.menu-header{
+		justify-content: flex-start;
+		margin: 10px 0 0 0;
+	}
+}

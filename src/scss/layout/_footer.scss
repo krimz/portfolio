@@ -17,3 +17,19 @@
         z-index: 1;
     }
 }
+
+@media(max-width: $desktop-small){
+    .outro{
+        font-size: 3rem;
+    }
+}
+@media(max-width: $phone){
+    .outro{
+        justify-content: flex-start;
+        font-size: 2rem;
+        margin: 25px 0 0;
+        span{
+            padding: 0;
+        }
+    }
+}
