@@ -1,46 +1,39 @@
 /* Header */
-header{
-	height: 72px;
-	h1{
-		letter-spacing: -1px;
+#header{
+	padding: 30px 0 50px 0;
+	.container{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
 }
-nav{
-	margin: 2em 0 0 0;
-	width: 30%;
-	position: fixed;
-	top: 0;
-	right: 0;
-	z-index: 1;
-	ul{
-		margin: 0;
-		text-align: right;
-		li{
-			display: inline-block;
-			margin: 0 40px;
-			.links-hover{
-				position: relative;
-				display: inline-block;
-			}
-
-			.links-hover::after{
-				width: 0;
-				height: .1em;
-				position: absolute;
-				top: 100%;
-				left:0;
-				background-color: $yellow;
-				content: '';
-				transition: .3s ease;
-			}
-
-			.links-hover:hover::after{
+.menu-header{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	list-style-type: none;
+	margin: 0;
+	> li{
+		margin: 0 150px 0 0;
+		&:last-child{
+			margin-right: 0;
+		}
+		&.active{
+			a{
 				font-weight: 700;
-				width: 100%;
+				&:before{
+					transform: scale(1);
+				}
 			}
-			.links-hover::active{
-				font-weight: bold;
-			}
+		}
+	}
+	a{
+		position: relative;
+		padding: 5px 0;
+		font-weight: 400;
+		font-size: 1.6rem;
+		&:before{
+			height: 4px;
 		}
 	}
 }

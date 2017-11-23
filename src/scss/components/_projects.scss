@@ -1,0 +1,50 @@
+.projects{
+    margin: 0;
+    > li{
+        display: block;
+        width: 100%;
+        height: 250px;
+        margin: 0 0 30px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        color: $white;
+        background: grey;
+        text-align: center;
+        &:before{
+            display: none;
+        }
+    }
+    .project-title, .project-type{
+        display: block;
+    }
+    .project-title{
+        position: relative;
+        margin: 0 0 10px;
+        padding: 5px 0;
+        font-weight: 700;
+        font-size: 3.4rem;
+        &:before{
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            margin-left: -26px;
+            width: 52px;
+            height: 4px;
+            background: $yellow;
+        }
+    }
+    .project-type{
+        font-family: 'Playfair Display', serif;
+        font-size: 2.4rem;
+    }
+}
