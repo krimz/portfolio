@@ -1,6 +1,19 @@
 /* Footer */
+#footer{
+    padding: 0 0 100px;
+}
 .outro{
-    margin: 25px 0 0;
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px -10px 0 0;
     text-align: right;
     font-size: 4rem;
+    color: $white;
+    font-weight: 700;
+    span{
+        position: relative;
+        padding: 10px;
+        background: $black;
+        z-index: 1;
+    }
 }
