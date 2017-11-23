@@ -5,42 +5,74 @@
         width: 100%;
         height: 250px;
         margin: 0 0 30px;
+        &.hibouvision{
+            a{
+                background-image: url(https://i.ytimg.com/vi/W-PBFMECvTE/maxresdefault.jpg);
+            }
+        }
+        &.akeneo{
+            a{
+                background-image: url(http://graphicsheat.com/wp-content/uploads/2013/05/cute-cats-5.jpg);
+            }
+        }
+        &.myforum{
+            a{
+                background-image: url(https://www.thehappycatsite.com/wp-content/uploads/2017/05/cute-2.jpg);
+            }
+        }
         &:last-child{
             margin-bottom: 0;
         }
     }
     a{
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+        &:before{
+            height: 100%;
+            transform: scaleX(1);
+            background: $dark-grey;
+            opacity: 0.6;
+        }
+        .project-title{
+            margin: 0 0 10px;
+            &:before{
+                content: '';
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                margin-left: -26px;
+                width: 52px;
+                height: 4px;
+                background: $yellow;
+            }
+        }
+    }
+    .wrapper-project{
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
         height: 100%;
         color: $white;
-        background: grey;
+        background-color: $dark-grey;
         text-align: center;
-        &:before{
-            display: none;
-        }
+    }
+    .project-text{
+        position: relative;
     }
     .project-title, .project-type{
         display: block;
     }
     .project-title{
         position: relative;
-        margin: 0 0 10px;
+        margin: 0;
         padding: 5px 0;
         font-weight: 700;
         font-size: 3.4rem;
-        &:before{
-            content: '';
-            display: block;
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            margin-left: -26px;
-            width: 52px;
-            height: 4px;
-            background: $yellow;
+        strong{
+            color: $yellow;
         }
     }
     .project-type{
