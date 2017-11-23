@@ -177,6 +177,13 @@ a{
     &:active{
         filter: saturate(200%);
     }
+    .icon{
+        position: relative;
+        top: -0.1em;
+        width: 25px;
+        height: 25px;
+        margin: 0 5px 0 0;
+    }
 }
 
 
