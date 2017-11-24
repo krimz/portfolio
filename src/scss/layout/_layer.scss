@@ -18,21 +18,21 @@
 	background: $yellow;
   transform-origin: 0 0;
   &.horizontal-top{
-    height: 8px;
+    height: 5px;
     width: 100%;
     top: 220px;
     right: calc(100% - 150px);
     transform: scaleX(0);
   }
   &.vertical{
-    width: 8px;
+    width: 5px;
     top: 220px;
     bottom: 174px;
     left: 150px;
     transform: scaleY(0);
   }
   &.horizontal-bottom{
-    height: 8px;
+    height: 5px;
     bottom: 174px;
     left: 150px;
     right: 0;
