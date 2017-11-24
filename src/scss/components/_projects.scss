@@ -7,17 +7,27 @@
         margin: 0 0 30px;
         &.hibouvision{
             a{
-                background-image: url(https://i.ytimg.com/vi/W-PBFMECvTE/maxresdefault.jpg);
+                background-image: url(../img/hibou.png);
             }
         }
         &.akeneo{
             a{
-                background-image: url(http://graphicsheat.com/wp-content/uploads/2013/05/cute-cats-5.jpg);
+                background-image: url(../img/akeneo.png);
+            }
+        }
+        &.ector{
+            a{
+                background-image: url(../img/ector.png);
+            }
+        }
+        &.hipopsession{
+            a{
+                background-image: url(../img/hipop.png);
             }
         }
         &.myforum{
             a{
-                background-image: url(https://www.thehappycatsite.com/wp-content/uploads/2017/05/cute-2.jpg);
+                background-image: url(../img/jobs.png);
             }
         }
         &:last-child{
